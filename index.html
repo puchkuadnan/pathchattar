@@ -32,7 +32,7 @@ footer{background:#10251a;color:#dfe8e1;padding:40px 0}.foot{display:flex;justif
 <input id="bookId" type="hidden">
 <input id="bookTitle" placeholder="বইয়ের নাম">
 <input id="bookAuthor" placeholder="লেখকের নাম">
-<select id="bookStatus"><option value="available">পাওয়া যাচ্ছে</option><option value="borrowed">ধার দেওয়া</option></select>
+<input id="bookCategory" placeholder="ক্যাটাগরি (ঐচ্ছিক)"><textarea id="bookDescription" placeholder="বইয়ের সংক্ষিপ্ত বিবরণ (ঐচ্ছিক)" rows="3"></textarea><select id="bookAvailable"><option value="true">🟢 পাওয়া যাচ্ছে</option><option value="false">🔴 ধার দেওয়া</option></select>
 <input id="bookCoverFile" type="file" accept="image/jpeg,image/png,image/webp" onchange="previewBookCover(event)"><small id="bookCoverStatus" style="opacity:.75">কভার ছবি নির্বাচন করুন (JPG/PNG/WebP)</small><input id="bookCoverUrl" type="hidden">
 <div class="admin-actions"><button class="btn primary" onclick="saveBook()">বই সংরক্ষণ</button><button class="btn ghost" onclick="clearBookForm()">নতুন</button></div>
 </div>
